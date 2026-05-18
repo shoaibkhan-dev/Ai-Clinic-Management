@@ -288,5 +288,5 @@ const paidAgg = await Appointment.aggregate([{ $match: { "payment.status": "Paid
     if (status) filter.status = status;
     if (search) {
       const re = new RegExp(search, "i");
-      filter.$or = [{ patientName: re }, { mobile: re }, { notes: re }];
+      filter.$or = [{ patientName: re }, { mobile: re }, { notes: re }]
     }
