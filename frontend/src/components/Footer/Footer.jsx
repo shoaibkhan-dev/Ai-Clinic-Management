@@ -99,4 +99,4 @@ const socialLinks = [
       ))}
     </div>
   </div>
-</div>;
+</div>
