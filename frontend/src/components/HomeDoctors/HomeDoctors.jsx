@@ -115,25 +115,4 @@
           </div>
         ) : null}
 
-                      <img
-                        src={doctor.image || "/placeholder-doctor.jpg"}
-                        alt={doctor.name}
-                        loading="lazy"
-                        className={homeDoctorsStyles.image}
-                        onError={(e) => {
-                          e.currentTarget.onerror = null;
-                          e.currentTarget.src = "/placeholder-doctor.jpg";
-                        }}
-                      />
-
-                
-                    <img
-                      src={doctor.image || "/placeholder-doctor.jpg"}
-                      alt={doctor.name}
-                      loading="lazy"
-                      className={homeDoctorsStyles.image}
-                      onError={(e) => {
-                        e.currentTarget.onerror = null;
-                        e.currentTarget.src = "/placeholder-doctor.jpg";
-                      }}
-                    />
+          
