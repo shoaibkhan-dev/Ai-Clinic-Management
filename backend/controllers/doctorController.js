@@ -208,3 +208,5 @@ export async function updateDoctor(req, res) {
     return res.status(500).json({ success: false, message: "Server error" });
   }
 }
+
+
