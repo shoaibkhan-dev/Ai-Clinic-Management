@@ -206,11 +206,7 @@ function resolveClerkUserId(req) {
       console.error("DB error saving service appointment after stripe session:", dbErr);
       return res.status(500).json({ success: false, message: "Failed to create appointment record" });
     }
-  } catch (err) {
-    console.error("createServiceAppointment unexpected:", err);
-    return res.status(500).json({ success: false, message: "Server error" });
-  }
-};
+ 
 
 //confirmServicePayment
     let appt = await ServiceAppointment.findOneAndUpdate(
