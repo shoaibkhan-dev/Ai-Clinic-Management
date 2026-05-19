@@ -87,7 +87,7 @@ const parseAvailability = (v) => {
               console.warn("Cloudinary delete failed:", err?.message || err);
             }
           }
-        }
+        };
       } catch (err) {
         console.error("Cloudinary upload error:", err);
       }
