@@ -206,7 +206,7 @@ export async function updateDoctor(req, res) {
   } catch (err) {
     console.error("updateDoctor error:", err);
     return res.status(500).json({ success: false, message: "Server error" });
-  }
-}
+  };
+};
 
 

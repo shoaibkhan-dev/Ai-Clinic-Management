@@ -91,4 +91,4 @@ const parseAvailability = (v) => {
       } catch (err) {
         console.error("Cloudinary upload error:", err);
       }
-    }
+    };
