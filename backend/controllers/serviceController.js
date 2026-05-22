@@ -85,7 +85,7 @@ const parseAvailability = (v) => {
               await deleteFromCloudinary(existing.imagePublicId);
             } catch (err) {
               console.warn("Cloudinary delete failed:", err?.message || err);
-            }
+            };
           };
         };
       } catch (err) {
