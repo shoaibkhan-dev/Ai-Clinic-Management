@@ -63,7 +63,7 @@ const parseAvailability = (v) => {
       } catch (err) {
         console.error("Cloudinary upload error:", err);
       }
-    }
+    };
 
  //updateService
     if (b.name !== undefined) updateData.name = b.name;
