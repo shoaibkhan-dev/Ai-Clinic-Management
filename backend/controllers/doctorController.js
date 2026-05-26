@@ -194,7 +194,7 @@ export async function updateDoctor(req, res) {
       const other = await Doctor.findOne({ email: body.email.toLowerCase() });
       if (other && other._id.toString() !== id) return res.status(409).json({ success: false, message: "Email already in use" });
       existing.email = body.email.toLowerCase();
-    }
+    };
 
     if (body.password) existing.password = body.password;
 
