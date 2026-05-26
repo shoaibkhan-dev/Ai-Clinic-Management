@@ -183,7 +183,7 @@ export async function updateDoctor(req, res) {
       }
     } else if (body.imageUrl) {
       existing.imageUrl = body.imageUrl;
-    }
+    };
 
     if (body.schedule) existing.schedule = parseScheduleInput(body.schedule);
 
