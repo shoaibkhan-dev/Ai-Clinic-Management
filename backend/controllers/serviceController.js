@@ -62,7 +62,7 @@ const parseAvailability = (v) => {
         imagePublicId = up?.public_id || null;
       } catch (err) {
         console.error("Cloudinary upload error:", err);
-      }
+      };
     };
 
  //updateService
